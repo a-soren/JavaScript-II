@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+var password;
+var reverse=function(str){
+  return str.split('').reverse().join('');
+}
+
+var bodyguard={
+  str1:'ion',
+  str2:reverse ('acnoc'),
+  str3:'tenat',
+  request:function (){
+    return 'Password: '+this.str2+this.str3+this.str1;
+  }
+};
+
+bodyguard.request(password);
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
